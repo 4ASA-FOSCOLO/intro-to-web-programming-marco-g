@@ -1,1 +1,77 @@
-index
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recensioni Gastronomiche Locali</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Benvenuto nelle Recensioni Gastronomiche</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#map">Mappa</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Sezione Recensioni -->
+        <section id="reviews">
+            <h2>Recensioni Recenti</h2>
+            <div class="review">
+                <p><strong>Ristorante da Mario</strong> - Punteggio: <span>8/10</span></p>
+                <p>“Ottimo cibo, servizio eccellente!”</p>
+            </div>
+            <!-- Altre recensioni qui -->
+        </section>
+
+        <!-- Sezione Aggiungi Recensione -->
+        <section id="add-review">
+            <h2>Aggiungi Recensione</h2>
+            <form>
+                <label for="restaurant-name">Nome del Ristorante:</label>
+                <input type="text" id="restaurant-name" name="restaurant-name" required>
+                
+                <label for="rating">Punteggio (1-10):</label>
+                <input type="number" id="rating" name="rating" min="1" max="10" required>
+                
+                <label for="review">Recensione:</label>
+                <textarea id="review" name="review" rows="4" required></textarea>
+                
+                <button type="submit">Invia</button>
+            </form>
+        </section>
+
+        <!-- Sezione Mappa -->
+        <section id="map">
+            <h2>Mappa</h2>
+            <div id="map-container" style="width: 100%; height: 300px; background-color: lightgray;">
+                <!-- Integrazione con API mappe qui -->
+            </div>
+        </section>
+
+        <!-- Sezione Login -->
+        <section id="login">
+            <h2>Effettua il Login</h2>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Recensioni Gastronomiche</p>
+    </footer>
+</body>
+</html>
