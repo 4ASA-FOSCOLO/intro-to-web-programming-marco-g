@@ -3,3 +3,12 @@
 # Zinna e Galvagno
 
 [LINK](https://4asa-foscolo.github.io/intro-to-web-programming-marco-g/)
+
+
+# TO DO 
+- identità al sito quindi un nome
+- dare un senso ai bottoni
+- hero section
+- ordinare le cose
+- usare dei link sensati
+- div e section
