@@ -2,89 +2,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SneakerVibe</title>
+<title>SneakerVibe Streetwear</title>
 <style>
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0d0d0d;
-    color: #eee;
-}header { position: fixed; width: 100%; top: 0; background: rgba(0,0,0,0.9); display: flex; justify-content: space-between; padding: 15px 40px; z-index: 1000; }
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#0a0a0a;color:#fff}header{ position:fixed; top:0; width:100%; background:#000; display:flex; justify-content:space-between; padding:15px 40px; z-index:1000 }
 
-header h1 { color: #ffd700; font-size: 1.5rem; }
+header h1{color:#ffd700} nav a{margin-left:20px;color:#fff;text-decoration:none} nav a:hover{color:#ffd700}
 
-nav a { margin-left: 20px; color: #eee; text-decoration: none; }
+section{padding:100px 40px}
 
-section { padding: 100px 40px; }
+.hero{ height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url('https://images.unsplash.com/photo-1600180758890-6b94519a8ba8'); background-size:cover; animation:fadeIn 2s ease }
 
-.hero { height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1542291026-7eec264c27ff'); background-size: cover; }
+.hero h2{font-size:3rem} .hero p{margin-top:10px}
 
-.hero h2 { font-size: 3rem; }
+.btn{ margin-top:20px; padding:12px 25px; background:#ffd700; color:#000; text-decoration:none; border-radius:6px; transition:0.3s }
 
-.btn { margin-top: 20px; padding: 12px 25px; background: #ffd700; color: black; text-decoration: none; border-radius: 6px; font-weight: bold; }
+.btn:hover{transform:scale(1.1)}
 
-.split { display: flex; gap: 40px; flex-wrap: wrap; }
+.cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px }
 
-.box { flex: 1; min-width: 250px; background: #1a1a1a; padding: 20px; border-radius: 10px; }
+.card{ background:#111; padding:15px; border-radius:10px; text-align:center; transition:0.3s }
 
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.card img{ width:100%; border-radius:10px }
 
-.card { background: #1a1a1a; padding: 20px; border-radius: 10px; text-align: center; }
+.card:hover{ transform:translateY(-10px) scale(1.03) }
 
-footer { text-align: center; padding: 30px; background: #000; } </style>
+input{ padding:10px; margin-top:10px; width:250px; border:none; border-radius:5px }
+
+footer{ text-align:center; padding:30px; background:#000 }
+
+@keyframes fadeIn{ from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:translateY(0)} } </style>
 
 </head>
 <body><header>
-    <h1>SneakerVibe</h1>
-    <nav>
-        <a href="#hero">Home</a>
-        <a href="#about">Chi siamo</a>
-        <a href="#shop">Shop</a>
-        <a href="#offerte">Offerte</a>
-        <a href="#contatti">Contatti</a>
-    </nav>
+<h1>SneakerVibe</h1>
+<nav>
+<a href="#hero">Home</a>
+<a href="#categorie">Categorie</a>
+<a href="#brand">Brand</a>
+<a href="#offerte">Offerte</a>
+<a href="#abbonamenti">Abbonamenti</a>
+<a href="#contatti">Contatti</a>
+</nav>
 </header><section class="hero" id="hero">
-    <h2>Non è solo una scarpa.
-        <br>È il tuo stile.</h2>
-    <a href="#shop" class="btn">Esplora ora</a>
-</section><section id="about">
-    <div class="split">
-        <div class="box">
-            <h2>La nostra identità</h2>
-            <p>SneakerVibe nasce per chi vive lo stile ogni giorno. Non vendiamo solo scarpe, ma personalità.</p>
-        </div>
-        <div class="box">
-            <h2>La mission</h2>
-            <p>Portare le migliori sneakers con design e performance, per distinguerti sempre.</p>
-        </div>
-    </div>
-</section><section id="shop">
-    <h2>Shop per categoria</h2>
-    <div class="cards">
-        <div class="card">Basket</div>
-        <div class="card">Running</div>
-        <div class="card">Streetwear</div>
-        <div class="card">Lifestyle</div>
-    </div>
+<h2>Streetwear Energy</h2>
+<p>Le sneakers che definiscono il tuo stile</p>
+<a href="#categorie" class="btn">Scopri ora</a>
+</section><section id="categorie">
+<h2>Categorie</h2>
+<div class="cards">
+<div class="card"><img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db"><h3>Basket</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a"><h3>Running</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1549298916-b41d501d3772"><h3>Streetwear</h3></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1528701800489-20be3c3c1c1c"><h3>Luxury</h3></div>
+</div>
+</section><section id="brand">
+<h2>Brand</h2>
+<div class="cards">
+<div class="card">Nike</div>
+<div class="card">Adidas</div>
+<div class="card">Jordan</div>
+<div class="card">New Balance</div>
+</div>
 </section><section id="offerte">
-    <h2>Drop del momento</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>End Of Play</h3>
-            <p>269 €</p>
-            <a href="#" class="btn">Acquista</a>
-        </div>
-        <div class="card">
-            <h3>Out Of Office</h3>
-            <p>650 €</p>
-            <a href="#" class="btn">Acquista</a>
-        </div>
-    </div>
+<h2>Offerte</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5">
+<h3>Sneaker X</h3>
+<p>199€</p>
+<a href="#" class="btn">Compra</a>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519">
+<h3>Street Pro</h3>
+<p>249€</p>
+<a href="#" class="btn">Compra</a>
+</div>
+</div>
+</section><section id="abbonamenti">
+<h2>Abbonamenti</h2>
+<p>Iscriviti per ricevere offerte esclusive</p>
+<input type="email" placeholder="Inserisci la tua email">
+<br>
+<a href="#" class="btn">Iscriviti</a>
 </section><section id="contatti">
-    <h2>Contatti</h2>
-    <p>Email: info@sneakervibe.it</p>
-    <p>Telefono: 333 123 4567</p>
+<h2>Contatti</h2>
+<p>Email: sneakervibe@email.it</p>
+<p>Telefono: +39 345 987 6543</p>
 </section><footer>
-    ©️ 2026 SneakerVibe | Built for style
+©️ 2026 SneakerVibe | Streetwear Culture
 </footer></body>
 </html>
